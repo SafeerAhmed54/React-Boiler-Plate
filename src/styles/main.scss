@@ -1,0 +1,8 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+.custom-card {
+  background-color: $primary;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
