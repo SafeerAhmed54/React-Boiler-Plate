@@ -1,0 +1,33 @@
+import React from 'react'
+
+const Card = ({primaryCard = false , sliderCard = false , title , description , img , isCentered = false}) => {
+
+
+if(primaryCard){
+    return (
+        <>
+        <div className={isCentered ? "text-center" : "text-left"}>
+  <p>PRIMARY CARD</p>
+        <h3>{title}</h3>
+        <p>{description}</p>
+        <img src={img}/>
+        </div>
+       
+        </>
+       
+    )
+}
+
+
+if(sliderCard){
+    return (
+        <p>SLIDER CARD</p>
+    )
+}
+
+    return (
+        
+    )
+}
+
+export default Card

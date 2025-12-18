@@ -1,8 +1,227 @@
 @use './variables' as *;
 @use './mixins' as *;
 
-.custom-card {
-  background-color: $primary;
-  padding: 1rem;
-  border-radius: 0.5rem;
+@font-face {
+  font-family: 'Inter';
+  src: url("/src/media/assets/fonts/Inter-VariableFont_opsz\,wght.ttf");
+  font-weight: 300, 900;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter";
+  background-color: $bg-color;
+  font: 1em;
+  color: $text-color;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.row {
+  width: 100%;
+  @include flex-justify-between;
+  flex-direction: row;
+}
+
+.col {
+  width: 100%;
+  @include flex-justify-between;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navbar {
+  padding: 2rem 0;
+}
+
+.logo {
+  width: 20%;
+
+  img {
+    width: 60%;
+    height: auto;
+  }
+}
+
+.nav-links {
+  width: 40%;
+
+  ul {
+    @include flex-justify-between;
+    gap: 30px;
+
+    li {
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        color: $text-color;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.dApp-btn-div {
+  width: 20%;
+  @include flex-justify-between;
+  justify-content: flex-end;
+
+  .dApp-btn {
+    border-width: 1px;
+    font-weight: bold;
+    background-color: $card-bg-color;
+  }
+}
+
+.home-section {
+  width: 100%;
+  height: 100vh;
+
+  .right-home {
+    width: 50%;
+    @include flex-justify-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+  }
+
+  .left-home {
+    width: 50%;
+    @include flex-justify-between;
+    justify-content: end;
+  }
+}
+
+.card-section {
+  width: 100%;
+  border-radius: 1.5rem;
+  background-color: $card-bg-color;
+
+  .left-card {
+    width: 35%;
+    @include flex-justify-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+  }
+
+  .right-card {
+    width: 65%;
+    @include flex-justify-between;
+    justify-content: end;
+  }
+}
+
+.about-section {
+  padding: 5rem 0;
+
+  .left-about {
+    width: 55%;
+    @include flex-justify-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 2rem;
+
+    button {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      border-width: 1px;
+      font-weight: bold;
+    }
+  }
+
+  .right-about {
+    width: 40%;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    .about-buttons-div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+  }
+}
+
+
+
+.background-card {
+  width: 100%;
+  height: 80%;
+}
+
+.about-button {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
+.tech-section {
+  padding: 5rem 0;
+
+  .heading-tech {
+    width: 100%;
+    @include flex-justify-between;
+    flex-direction: row;
+    gap: 2rem;
+
+    h1 {
+      width: 90%;
+      font-size: 2.5rem;
+    }
+
+    .slider-btn {
+      width: 10%;
+      align-self: flex-end;
+      @include flex-justify-between;
+      gap: 1rem;
+    }
+
+    .prev-btn,
+    .next-btn {
+      width: 50px;
+      height: 50px;
+      background-color: $card-bg-color;
+      border-radius: 50%;
+      border-width: 1px;
+      @include flex-justify-between;
+      justify-content: center;
+    }
+
+  }
+
+  .slider-tech{
+    width: 100%;
+    @include flex-justify-between;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+
+.card-slider{
+  width: 250px;
+  height: 250px;
+  background-color: $card-bg-color;
+  border-radius: 1rem;
+  @include flex-justify-between;
+  justify-content: center;
+  flex-shrink: 0;
 }
