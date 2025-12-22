@@ -8,11 +8,7 @@ import Vision from "./sections/vision/index.jsx"
 import Desc from "./sections/description/index.jsx"
 import Plan from "./sections/plans/index.jsx"
 import Connected from "./sections/conntected/index.jsx"
-import Footer from '../../components/Footer.jsx'
-import Card from '../../components/ui/card/index.jsx'
-import { Car } from 'lucide-react'
-import SectionTitle from '../../components/sectionTitle/index.jsx'
-import AboutButton from '../../components/ui/button/index.jsx'
+import PrimaryLayout from '../../layout/primaryLayout/index.jsx'
 const index = () => {
   return (
     <div>
@@ -29,17 +25,17 @@ const index = () => {
 
       {/* <SectionTitle sectionDescription={'its is description'} sectionTitle={'sesction title'} titleClass='text-red-500' descClass='text-green-500'/>
       <AboutButton onClick={()=>{console.log('clicked')}} btnText='click me'  variants='outline'/> */}
-
-      <Navbar />
-      <Home />
-      <About />
-      <Tech />
-      <Feature />
-      <Vision />
-      <Desc />
-      <Plan />
-      <Connected />
-      <Footer />
+      
+      <PrimaryLayout>
+        <Home />
+        <About />
+        <Tech />
+        <Feature />
+        <Vision />
+        <Desc />
+        <Plan />
+        <Connected />
+      </PrimaryLayout>
     </div>
   )
 }

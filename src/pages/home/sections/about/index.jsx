@@ -1,12 +1,23 @@
 import React from 'react'
 import { ArrowBigRight } from 'lucide-react'
-import BackgroundCard from '../../../../components/BackgroundCard'
+import BackgroundCard from '../../../../components/BackgroundCard.jsx'
 import AboutButton from '../../../../components/AboutButton'
-import VisitButton from '../../../../components/VisitButton'
 import Button from '../../../../components/ui/button/index.jsx'
 import SectionHeading from '../../../../components/ui/sectionTitle/index.jsx'
+import Card from '../../../../components/ui/card/index.jsx'
 
 const index = () => {
+
+  Array.from({ length: 4 }).map((_, index) => {
+    return (
+      <div key={index}>
+        <Button
+    
+        />
+      </div>
+    )
+  })
+
   return (
     <section className='about-section'>
       <div className='container'>
@@ -31,12 +42,23 @@ const index = () => {
             />
           </div>
           <div className='right-about '>
-            <BackgroundCard />
+            <Card
+            img={"./src/media/assets/img/digital-company.svg"}
+            />
             <h2 className='text-2xl font-bold'>Ownable</h2>
             <div className='about-buttons-div'>
-              <AboutButton />
-              <AboutButton />
-              <AboutButton />
+              {Array.from({ length: 3 }).map((_, index) => {
+                return (
+                  <div  key={index}>
+                    <Button
+                      onClick={() => {
+
+                      }}
+                      btnText={""}
+                    />
+                  </div>
+                )
+              })}
             </div>
           </div>
         </div>

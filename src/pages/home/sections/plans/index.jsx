@@ -1,5 +1,4 @@
 import React from 'react'
-import PlansCard from '../../../../components/PlansCard'
 import Card from '../../../../components/ui/card/index.jsx'
 import SectionTitle from '../../../../components/ui/sectionTitle/index.jsx'
 

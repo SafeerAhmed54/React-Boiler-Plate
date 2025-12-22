@@ -1,6 +1,5 @@
 import React from 'react'
 import { ArrowLeft , ArrowRight, Section } from 'lucide-react'
-import CardSlider from '../../../../components/CardSlider'
 import Card from '../../../../components/ui/card/index.jsx'
 import SectionHeading from '../../../../components/ui/sectionTitle/index.jsx'
 
