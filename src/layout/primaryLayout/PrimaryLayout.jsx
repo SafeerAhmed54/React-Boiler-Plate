@@ -5,7 +5,7 @@ import { Outlet } from 'react-router'
 // @import components
 import Navbar from '../../components/layout/navbar/Navbar.jsx'
 import Footer from '../../components/layout/footer/Footer.jsx'
-const index = ({children}) => {
+const Primary = ({children}) => {
   return (
     <>
       <Navbar />
@@ -15,4 +15,4 @@ const index = ({children}) => {
   )
 }
 
-export default index
+export default Primary

@@ -4,7 +4,7 @@ import Button from '../../../../components/button/Button.jsx'
 import SectionHeading from '../../../../components/sectionTitle/SectionTitle.jsx'
 import Card from '../../../../components/card/Card.jsx'
 
-const index = () => {
+const index = ({data}) => {
 
   Array.from({ length: 4 }).map((_, index) => {
     return (
@@ -22,14 +22,10 @@ const index = () => {
         <div className='row'>
           <div className='left-about'>
             <SectionHeading
-              heading={"TOLSTOY-1 makes"}
-              subHeading={"Text-to-Character a reality"}
-              headingDesc={`After receiving a natural description of a character as an input,
-              it generates within seconds an interactive character with its own appearance,voice, 
-              intelligence, personality, and identity.`}
-              subHeadingDesc={`Any TOLSTOY-1 generated AI Character has a customizable personality and voice,
-              can be used to generate media, can be tokenized and owned, and is interoperable
-              amongst the dApps built on the iNFT Protocol.`}
+              heading={data.title}
+              subHeading={data.subtitle}
+              headingDesc={data.description}
+              subHeadingDesc={data.subdDescription}
             />
             <Button onClick={(e) => {
               e.preventDefault();

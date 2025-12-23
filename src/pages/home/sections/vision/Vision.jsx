@@ -3,26 +3,7 @@ import React from 'react'
 import Card from '../../../../components/card/Card.jsx'
 import SectionTitle from '../../../../components/sectionTitle/SectionTitle.jsx'
 
-const index = () => {
-
-  const visionCards = [
-    {
-      title: "TOLSTOY-1",
-      description: "World's First Text-to-Character AI System",
-      image: "./src/media/assets/img/tolstoys.svg",
-    },
-    {
-      title: "TOLSTOY-1",
-      description: "World's First Text-to-Character AI System",
-      image: "./src/media/assets/img/tolstoys.svg",
-    },
-    {
-      title: "TOLSTOY-1",
-      description: "World's First Text-to-Character AI System",
-      image: "./src/media/assets/img/tolstoys.svg",
-    },
-  ]
-
+const index = ({data}) => {
 
   return (
     <section className='vision-section py-20 my-20'>
@@ -30,20 +11,19 @@ const index = () => {
         <div className='w-full flex flex-col justify-start gap-10'>
           <div className='w-full text-center'>
             <SectionTitle
-              heading="Our Vision"
+              heading={data.title}
               headingDesc={
                 <>
-                  Alethea AI aims to bring{' '}
-                  <span className='text-blue-600'>Generative AI and Web3 together.</span>
+                  {data.subtitle}{' '}
+                  <span className='text-blue-600'>{data.childSubTitle}</span>
                 </>
               }
-              subHeadingDesc="We are not only building powerful AI Systems, but also enabling an underlying 
-              property rights layer that unlocks the value propositions of Web3 for the users of those systems."
+              subHeadingDesc={data.description}
             />
           </div>
           <div className='w-full flex flex-row justify-between'>
-            {visionCards.map((card, index) => (
-              <Card img={card.image} title={card.title} desc={card.description} isCenter="true" isButton="true" variant='vision' />
+            {data.visionCards.map((card, index) => (
+              <Card key={index} img={card.image} title={card.title} desc={card.description} isCenter="true" isButton="true" variant='vision' />
             ))}
           </div>
         </div>

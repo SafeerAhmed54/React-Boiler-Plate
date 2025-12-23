@@ -10,6 +10,7 @@ const Button = ({ onClick, className = "", btnText, icon, variant = "outline" })
         secondary: 'w-fit h-fit text-white rounded-full bg-slate-600 px-4 py-2',
         subscribe: 'bg-black py-2 px-8 rounded-lg',
         outline: 'w-5 h-5 rounded-full bg-blue-500',
+        rounded: 'border rounded-full py-2 px-4 hover:bg-black text-black hover:text-white transition-colors',
     }
 
     // Use the icon component if provided, otherwise use null

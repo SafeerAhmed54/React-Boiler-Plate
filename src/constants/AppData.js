@@ -2,18 +2,19 @@ const appData = {
   hero: {
     title: "TOLSTOY-1",
     subtitle: "Aletheia AI is proud to introduce",
-    description: "The world's first AI-based data-sets powering AI chatbots that's distinguished in conversational to a point THE STORY-1 powered Nginx for interesting creation."
-  },
-
-  dawnSection: {
-    title: "The Dawn of The Generative Age",
-    description: "In the dawn, only a half of the human population could create, operate or communicate. Using the ancient methodology - alphabets, only 50% of the world's 8 billion populations could read or write. The world can now be revolutionized. All humans can instantly create content of their choice without learning or knowing alphabets which it takes a lifetime to master."
+    description: "The world's first AI system that can generate interactive AI characters from a description in natural language. In short, TOLSTOY-1 enables Text-to-Character creation."
+    ,
+    dawnSection: {
+      title: "The Dawn of The Generative Age",
+      description: "In the dawn, only a half of the human population could create, operate or communicate. Using the ancient methodology - alphabets, only 50% of the world's 8 billion populations could read or write. The world can now be revolutionized. All humans can instantly create content of their choice without learning or knowing alphabets which it takes a lifetime to master."
+    },
   },
 
   capabilities: {
     title: "TOLSTOY-1 makes",
     subtitle: "Text-To-Character a reality",
-    description: "After rendering a range of descriptions of a character on an idea, it generates video content or photorealistic characters who do the things you describe using simple natural language prompts.\n\nAny TEXT-PROMPT generated AI-Character has a custom-crafted personality and speech, which can be generated instantly, without waiting days or weeks like the traditional process of human/designer takes from the first brainstorm.",
+    description: "After rendering a range of descriptions of a character on an idea, it generates video content or photorealistic characters who do the things you describe using simple natural language prompts.",
+    subDescription: "Any TOLSTOY-1 generated AI-Character has a custom-crafted personality and speech, which can be generated instantly, without waiting days or weeks like the traditional process of human/designer takes from the first brainstorm.",
     cta: {
       text: "Try Demo Lab",
       link: "#"
@@ -22,24 +23,29 @@ const appData = {
   },
 
   useCases: {
-    title: "TOLSTOY-1 can be used to create characters for a wide variety of use cases:",
-    cases: [
+    title: "TOLSTOY-1 can be used to create characters",
+    subTitle: "for wide variety of use cases:",
+    techData: [
       {
-        title: "Original Tales",
-        icon: "character-icon-1"
+        id: 1,
+        img: "./src/media/assets/img/twins.svg",
+        title: "Digital Twins",
       },
       {
-        title: "Friends & Sidekis",
-        icon: "character-icon-2"
+        id: 2,
+        img: "./src/media/assets/img/parody.svg",
+        title: "Parody & Satire",
       },
       {
+        id: 3,
+        img: "./src/media/assets/img/digital.svg",
         title: "Digital Guides",
-        icon: "character-icon-3"
       },
       {
-        title: "Digital Companions",
-        icon: "character-icon-4"
-      }
+        id: 4,
+        img: "./src/media/assets/img/digital-company.svg",
+        title: "Digital Companies",
+      },
     ]
   },
 
@@ -52,88 +58,116 @@ const appData = {
       text: "Visit AICharacter.com",
       link: "#"
     },
-    characters: [
-      { name: "Aurora B.", image: "character-1" },
-      { name: "Sebastian P.", image: "character-2" },
-      { name: "Miko T.", image: "character-3" },
-      { name: "Valentina M.", image: "character-4" }
+    featureCards: [
+      {
+        id: 1,
+        link: "./src/media/assets/img/brad.svg"
+      },
+      {
+        id: 2,
+        link: "./src/media/assets/img/elon.svg"
+      },
+      {
+        id: 3,
+        link: "./src/media/assets/img/taylor.svg"
+      },
+      {
+        id: 4,
+        link: "./src/media/assets/img/ronaldo.svg"
+      }
     ]
   },
 
   vision: {
     title: "Our Vision",
-    subtitle: "Aletheia AI aims to bring democratized and enriched Innovation.",
+    subtitle: "Aletheia AI aims to bring",
+    childSubTitle: 'Generative AI and Web3 together.',
     description: "We are on the mission to empower all creators, artists and storytellers around the world to create AI-generated characters that feel like humans and narrate with them.",
-    models: [
+    visionCards: [
       {
-        name: "TOLSTOY-1",
-        description: "World's First Text-to-Character AI System.",
-        cta: "Learn More"
+        title: "TOLSTOY-1",
+        description: "World's First Text-to-Character AI System",
+        image: "./src/media/assets/img/tolstoys.svg",
       },
       {
-        name: "TOLSTOY-2",
-        description: "World's First Text-to-Narrator-AI System.",
-        cta: "Learn More"
+        title: "TOLSTOY-1",
+        description: "World's First Text-to-Character AI System",
+        image: "./src/media/assets/img/tolstoys.svg",
       },
       {
-        name: "TOLSTOY-3",
-        description: "World's First Text-to-OmniGen-AI System.",
-        cta: "Learn More"
-      }
+        title: "TOLSTOY-1",
+        description: "World's First Text-to-Character AI System",
+        image: "./src/media/assets/img/tolstoys.svg",
+      },
     ]
   },
 
   announcement: {
-    title: "Keeping in line with our vision, we are excited to share that all TOLSTOY-1 generated characters are fully compatible with the (MPFT Protocol).",
+    title: "Keeping in line with our vision, we are excited to share that",
+    subTitle: "all TOYSTOL-1 generated characters are fully compatible with the iNFT Protocol",
     description: "To use all the benefits of subscribing to the STORY-1 generated character use with the MPFT Protocol AI-toolkit"
+    ,
+    inftBenefits: [
+      {
+        id: 1,
+        img: "./src/media/assets/img/gear.svg",
+        title: "Provable Ownership",
+        desc: "The characters exist as intelligent NFTs (iNFT) on blockchain, enabling their creators to verify ownership without a trusted third party."
+      },
+      {
+        id: 2,
+        img: "./src/media/assets/img/gear.svg",
+        title: "Data Sovereignty",
+        desc: "Own the data generated or collected your character, decide on which datasets are added to their knowledge bases, and shape their evolution."
+      },
+      {
+        id: 3,
+        img: "./src/media/assets/img/gear.svg",
+        title: "iNFT Assets",
+        desc: "Characters can generate other assets such as art, create scarcity around their own merchandise, own AI assets like voices, games, that exist in the iNFT Ecosystem."
+      },
+      {
+        id: 4,
+        img: "./src/media/assets/img/gear.svg",
+        title: "Governance",
+        desc: "Characters can decentralize the governance of their narrative and evolution, enabling their supporters to choose the datasets that shape their intelligence to the type of assets they create or own."
+      },
+      {
+        id: 5,
+        img: "./src/media/assets/img/gear.svg",
+        title: "Decentralized Interoperability",
+        desc: "iNFTs on the iNFT Protocol are interoperable across all compatible applications, allowing them to seamlessly."
+      },
+      {
+        id: 6,
+        img: "./src/media/assets/img/gear.svg",
+        title: "Data Sovereignty",
+        desc: "Own the data generated or collected your character, decide on which datasets are added to their knowledge bases, and shape their evolution."
+      }
+    ]
   },
-
-  features: [
-    {
-      title: "Provable Ownership",
-      description: "Every AI-TOLSTOY-1 generated character is uniquely catalogued on the blockchain with property ownership attributed to named entity",
-      icon: "ownership-icon"
-    },
-    {
-      title: "Data Sovereignty",
-      description: "Users have direct access and control to their personal narrative data. This data can be ported, downloaded, backed, and always stays yours.",
-      icon: "sovereignty-icon"
-    },
-    {
-      title: "MPFT Assets",
-      description: "AI features can monetize every variable state, through our revolutionary framework. Users will instantly lets onchain NFTs control AI-characters, identity and style in real-time.",
-      icon: "assets-icon"
-    },
-    {
-      title: "Governance",
-      description: "Characters can democratize the governance of their life/story and moderation, enabling their fans and the owners to shape the future and style of the characters they value.",
-      icon: "governance-icon"
-    },
-    {
-      title: "Decentralized Interoperability",
-      description: "If you own the IP through our decentralized infrastructure, You have 100% commercial-rights of usegrowing at community's autonomy, adhering them to constraints.",
-      icon: "interoperability-icon"
-    }
-  ],
 
   beta: {
     title: "TOLSTOY-1 is currently available in beta.",
     description: "Aletheia AI is a startup platform. As we complete builds in depth to make our ecosystem more feature-rich and stable for more to experience. Kindly remember this is a BETA PRODUCT. Contact us if you're interested in collaborating.",
     features: [
       {
+        id: 1,
+        img: "./src/media/assets/img/govern.svg",
         title: "Decentralized Governance",
-        description: "Through Budget Allocation model based on TOLSTOY-1 generated narratives or characters. Every character owners can have democratized fan vote criteria like light consensus protocol control what narratives or character changes the AI creates next.",
-        icon: "governance-diagram"
+        desc: "The iNFT Protocol enables governance by our community, and the decentralized governance will help ensure the right balance is achieved between ensuring non-malicious generations and creative freedom."
       },
       {
+        id: 2,
+        img: "./src/media/assets/img/content.svg",
         title: "Content Moderation Council",
-        description: "Utilizing AI + advisors like humans, the TOLSTOY-1 model's content output is fine-tuned by moderation features that keeps everything AI generated within organizational terms of service. AI-powered moderation in tandem with human reviewers set and all-encompassing layers to make characters safe and non-malign.",
-        icon: "moderation-diagram"
+        desc: "Alethea AI will release its AI Models progressively over time with taking into considerations the learnings and developments during the initial releases. These models can be used by anyone, including the AI Providers of the iNFT Protocol."
       },
       {
+        id: 3,
+        img: "./src/media/assets/img/phased.svg",
         title: "Phased Deployment",
-        description: "Aletheia AI will deploy its AI-features through a methodical phased deployment approach and will review construction live-worlds and will provide a production setting AI agents AI-character throughout phases with the support.",
-        icon: "deployment-diagram"
+        desc: "Alethea AI will release its AI Models progressively over time with taking into considerations the learnings and developments during the initial releases. These models can be used by anyone, including the AI Providers of the iNFT Protocol."
       }
     ]
   },
@@ -142,6 +176,8 @@ const appData = {
     title: "Stay Connected",
     description: "Receive development updates and new tech at your pace with Aletheia AI Newsletter.",
     placeholder: "Your email address",
-    buttonText: "Subscribe Now"
+    buttonText: "Subscribe"
   }
 };
+
+export default appData;

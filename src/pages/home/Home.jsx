@@ -16,6 +16,7 @@ import Vision from "./sections/vision/Vision.jsx"
 import Desc from "./sections/description/Description.jsx"
 import Plan from "./sections/plans/Plan.jsx"
 import Connected from "./sections/conntected/Connected.jsx"
+import data from "../../constants/AppData.js"
 const index = () => {
   return (
     <div>
@@ -33,14 +34,14 @@ const index = () => {
       <AboutButton onClick={()=>{console.log('clicked')}} btnText='click me'  variants='outline'/> */}
       
       {/* Main layout with sections */}
-        <Hero />
-        <About />
-        <Tech />
-        <Feature />
-        <Vision />
-        <Desc />
-        <Plan />
-        <Connected />
+        <Hero  data={data.hero}/>
+        <About data={data.capabilities}/>
+        <Tech data={data.useCases}/>
+        <Feature data={data.featuredApp}/>
+        <Vision data={data.vision} />
+        <Desc data={data.announcement}/>
+        <Plan data={data.beta} />
+        <Connected data={data.newsletter} />
     </div>
   )
 }

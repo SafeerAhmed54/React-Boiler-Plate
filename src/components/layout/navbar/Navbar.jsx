@@ -9,9 +9,8 @@ const Navbar = () => {
     return (
         <>
         <div>
-
             <div className="navbar">
-                <div className="container">
+                <div className="container relative">
                     <div className='row'>
                         <div className="logo">
                             <img src="./src/media/assets/img/atl-logo.png" alt="" />

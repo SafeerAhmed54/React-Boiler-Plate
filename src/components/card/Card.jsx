@@ -22,7 +22,7 @@ const Card = ({ img, title, desc, className = "", isCenter = false, isButton = f
         ${isCenter ? "items-center justify-center" : "items-start"}
         ${isBg ? bg : ""}
         `}>
-        <img src={img} alt="" className='' />
+        <img src={img} alt="" className='w-auto h-auto'/>
       </div>
       {/* Title and Description */}
       <h2 className='text-2xl font-bold'>{title}</h2>
