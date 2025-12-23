@@ -1,6 +1,6 @@
 import React from 'react'
 
-const index = () => {
+const Footer = () => {
   return (
     <footer className='py-20 bg-slate-950 border border-slate-800'>
             <div className='container'>
@@ -36,4 +36,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Footer

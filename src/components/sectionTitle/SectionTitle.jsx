@@ -1,3 +1,4 @@
+// @import dependencies
 import React from 'react'
 
 const index = ({ heading, subHeading, headingDesc, subHeadingDesc , className="" , variant="", isCentered = false}) => {

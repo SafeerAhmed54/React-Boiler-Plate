@@ -1,8 +1,8 @@
 import React from 'react'
 import { ArrowBigRight, Section } from 'lucide-react'
 import FeatureCard from '../../../../components/FeatureCard.jsx'
-import Button from '../../../../components/ui/button/index.jsx'
-import SectionTitle from '../../../../components/ui/sectionTitle'
+import Button from '../../../../components/button/Button.jsx'
+import SectionTitle from '../../../../components/sectionTitle/SectionTitle.jsx'
 
 const index = () => {
 

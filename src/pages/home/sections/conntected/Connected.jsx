@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from '../../../../components/ui/button/index.jsx'
+import Button from '../../../../components/button/Button.jsx'
 
 const index = () => {
   return (

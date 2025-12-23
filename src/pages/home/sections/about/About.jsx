@@ -1,10 +1,8 @@
 import React from 'react'
 import { ArrowBigRight } from 'lucide-react'
-import BackgroundCard from '../../../../components/BackgroundCard.jsx'
-import AboutButton from '../../../../components/AboutButton'
-import Button from '../../../../components/ui/button/index.jsx'
-import SectionHeading from '../../../../components/ui/sectionTitle/index.jsx'
-import Card from '../../../../components/ui/card/index.jsx'
+import Button from '../../../../components/button/Button.jsx'
+import SectionHeading from '../../../../components/sectionTitle/SectionTitle.jsx'
+import Card from '../../../../components/card/Card.jsx'
 
 const index = () => {
 

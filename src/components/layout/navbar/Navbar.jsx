@@ -1,8 +1,15 @@
+// @import dependencies
 import React from 'react'
-import Button from '../../ui/button/index.jsx'
+import { NavLink ,Outlet } from 'react-router'
+
+// @import components
+import Button from '../../button/Button.jsx'
+
 const Navbar = () => {
     return (
         <>
+        <div>
+
             <div className="navbar">
                 <div className="container">
                     <div className='row'>
@@ -11,11 +18,12 @@ const Navbar = () => {
                         </div>
                         <div className='nav-links'>
                             <ul>
-                                <li><a href="">iNFT Protocol</a></li>
-                                <li><a href="">API</a></li>
-                                <li><a href="">dApp</a></li>
-                                <li><a href="">Research</a></li>
-                                <li><a href="">About</a></li>
+                                <li><NavLink to={'/'}>Home</NavLink></li>
+                                <li><NavLink to={'/iNFTProtocol'}>iNFT Protocol</NavLink></li>
+                                <li><NavLink to={'/API'}>API</NavLink></li>
+                                <li><NavLink to={'/dApp'}>dApp</NavLink></li>
+                                <li><NavLink to={'/research'}> Research</NavLink></li>
+                                <li><NavLink to={'/about'}>About</NavLink></li>
                             </ul>
                         </div>
                         <div className='dApp-btn-div '>
@@ -30,6 +38,8 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
+            <Outlet/>
+        </div>
         </>
     )
 }

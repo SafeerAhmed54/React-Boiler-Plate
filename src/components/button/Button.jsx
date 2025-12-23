@@ -1,7 +1,8 @@
-import { ArrowRight } from 'lucide-react'
+// @import dependencies
 import React from 'react'
+import { ArrowRight } from 'lucide-react'
 
-const AboutButton = ({ onClick, className = "", btnText, icon, variant = "outline" }) => {
+const Button = ({ onClick, className = "", btnText, icon, variant = "outline" }) => {
 
     // Define variants for different button styles
     const variants = {
@@ -15,7 +16,6 @@ const AboutButton = ({ onClick, className = "", btnText, icon, variant = "outlin
     const IconComponent = icon || null
     
     return (
-
         // Buttons with different variants and icons
         <button onClick={onClick} className={` ${variants[variant]} ${className} `}>
             {btnText} {IconComponent}
@@ -23,4 +23,4 @@ const AboutButton = ({ onClick, className = "", btnText, icon, variant = "outlin
     )
 }
 
-export default AboutButton
+export default Button

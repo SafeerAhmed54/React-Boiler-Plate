@@ -1,7 +1,7 @@
 import React from 'react'
 import { ArrowLeft , ArrowRight, Section } from 'lucide-react'
-import Card from '../../../../components/ui/card/index.jsx'
-import SectionHeading from '../../../../components/ui/sectionTitle/index.jsx'
+import Card from '../../../../components/card/Card.jsx'
+import SectionHeading from '../../../../components/sectionTitle/SectionTitle.jsx'
 
 const techData = [
   {

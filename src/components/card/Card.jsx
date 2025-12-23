@@ -1,8 +1,11 @@
+// @import dependencies
 import React from 'react'
 import { ArrowRight } from 'lucide-react'
-import Button from '../button/index.jsx'
 
-const index = ({ img, title, desc, className = "", isCenter = false, isButton = false, variant = "", isBg = false }) => {
+// @import components
+import Button from '../button/Button.jsx'
+
+const Card = ({ img, title, desc, className = "", isCenter = false, isButton = false, variant = "", isBg = false }) => {
   const variants = {
     tech : " bg-slate-950 border border-slate-800 flex flex-col gap-4",
     vision: 'px-6 py-10 w-fit h-fit bg-slate-900 rounded-xl flex flex-col gap-5',
@@ -38,4 +41,4 @@ const index = ({ img, title, desc, className = "", isCenter = false, isButton = 
   )
 }
 
-export default index
+export default Card

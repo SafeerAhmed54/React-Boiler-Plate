@@ -1,6 +1,6 @@
 import React from 'react'
-import Card from '../../../../components/ui/card/index.jsx'
-import SectionTitle from '../../../../components/ui/sectionTitle/index.jsx'
+import Card from '../../../../components/card/Card.jsx'
+import SectionTitle from '../../../../components/sectionTitle/SectionTitle.jsx'
 
 const plans = [
   {

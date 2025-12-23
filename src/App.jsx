@@ -1,10 +1,14 @@
+// @import dependencies
 import React from 'react'
-import Home from './pages/home/index.jsx'
+
+// @import routes
+import Routes from './routes/Routing.jsx'
+
 
 const App = () => {
   return (
     <div>
-      <Home/>
+      <Routes/>
     </div>
   )
 }
