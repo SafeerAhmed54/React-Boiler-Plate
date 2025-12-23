@@ -7,7 +7,7 @@ const appData = {
 
   dawnSection: {
     title: "The Dawn of The Generative Age",
-    description: "In the dawn, only a half of the human population could create, operate or communicate. Using the ancient methodology - alphabets, only 50% of the world's 8 billion populations could read or write. The world can now be revolutionized. All humans can instantly create content of their choice without learning or knowing alphabets which it takes a lifetime to master."
+    description: "In the dawn, only a half of the human population could create, operate or communicate. Using the ancient methodology - alphabets, only 50% of the world's 8 billion populations could read or write. The world can now be revolutionized. All humans can now instantly create content of their choice without learning or knowing alphabets which it takes a lifetime to master."
   },
 
   capabilities: {
@@ -145,3 +145,6 @@ const appData = {
     buttonText: "Subscribe Now"
   }
 };
+
+// Export the data
+export default appData;
