@@ -3,16 +3,16 @@ import React from 'react'
 import { Routes, Route } from 'react-router'
 
 // @import layouts
-import PrimaryLayout from '../layout/primaryLayout/PrimaryLayout.jsx'
+import PrimaryLayout from '../layout/primaryLayout/index.jsx'
 
 // @import pages
-import Home from '../pages/home/Home.jsx'
-import INFTProtocol from '../pages/iNFTProtocol/INFTProtocol.jsx'
-import API from '../pages/api/API.jsx'
-import DApp from '../pages/dApp/dApp.jsx'
-import Research from '../pages/research/Research.jsx'
-import About from '../pages/about/About.jsx'
-import NotFound from '../pages/404/NotFound.jsx'
+import Home from '../pages/home/index.jsx'
+import INFTProtocol from '../pages/iNFTProtocol/index.jsx'
+import API from '../pages/api/index.jsx'
+import DApp from '../pages/dApp/index.jsx'
+import Research from '../pages/research/index.jsx'
+import About from '../pages/about/index.jsx'
+import NotFound from '../pages/404/index.jsx'
 
 const Routing = () => {
   return (

@@ -3,7 +3,7 @@ import React from 'react'
 import { NavLink ,Outlet } from 'react-router'
 
 // @import components
-import Button from '../../button/Button.jsx'
+import Button from '../../button/index.jsx'
 
 const Navbar = () => {
     return (

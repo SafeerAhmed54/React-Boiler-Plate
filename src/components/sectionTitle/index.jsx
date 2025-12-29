@@ -1,7 +1,7 @@
 // @import dependencies
 import React from 'react'
 
-const index = ({ heading, subHeading, headingDesc, subHeadingDesc , className="" , variant="", isCentered = false}) => {
+const sectionTitle = ({ heading, subHeading, headingDesc, subHeadingDesc , className="" , variant="", isCentered = false}) => {
 
     // Varaints for different title
     const varaints = {
@@ -19,4 +19,4 @@ const index = ({ heading, subHeading, headingDesc, subHeadingDesc , className=""
     )
 }
 
-export default index
+export default sectionTitle

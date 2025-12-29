@@ -1,9 +1,9 @@
 import React from 'react'
 
-import Card from '../../../../components/card/Card.jsx'
-import SectionTitle from '../../../../components/sectionTitle/SectionTitle.jsx'
+import Card from '../../../../components/card/index.jsx'
+import SectionTitle from '../../../../components/sectionTitle/index.jsx'
 
-const index = ({data}) => {
+const Vision = ({data}) => {
 
   return (
     <section className='vision-section py-20 my-20'>
@@ -32,4 +32,4 @@ const index = ({data}) => {
   )
 }
 
-export default index
+export default Vision

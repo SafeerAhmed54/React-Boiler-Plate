@@ -3,7 +3,7 @@ import React from 'react'
 import { ArrowRight } from 'lucide-react'
 
 // @import components
-import Button from '../button/Button.jsx'
+import Button from '../button/index.jsx'
 
 const Card = ({ img, title, desc, className = "", isCenter = false, isButton = false, variant = "", isBg = false }) => {
   const variants = {

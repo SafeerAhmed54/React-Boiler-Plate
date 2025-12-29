@@ -2,22 +2,24 @@
 import React from 'react'
 
 // @import layouts
-import PrimaryLayout from '../../layout/primaryLayout/PrimaryLayout.jsx'
+import PrimaryLayout from '../../layout/primaryLayout/index.jsx'
 
 // @import components
-import Navbar from "../../components/layout/navbar/Navbar.jsx"
+import Navbar from "../../components/layout/navbar/index.jsx"
 
 // @import sections
-import Hero from "./sections/hero/Hero.jsx"
-import About from "./sections/about/About.jsx"
-import Tech from "./sections/tech/Tech.jsx"
-import Feature from "./sections/featured/Featured.jsx"
-import Vision from "./sections/vision/Vision.jsx"
-import Desc from "./sections/description/Description.jsx"
-import Plan from "./sections/plans/Plan.jsx"
-import Connected from "./sections/conntected/Connected.jsx"
+import Hero from "./sections/hero/index.jsx"
+import About from "./sections/about/index.jsx"
+import Tech from "./sections/tech/index.jsx"
+import Feature from "./sections/featured/index.jsx"
+import Vision from "./sections/vision/index.jsx"
+import Desc from "./sections/description/index.jsx"
+import Plan from "./sections/plans/index.jsx"
+import Connected from "./sections/conntected/index.jsx"
+
+//@import Data from js File
 import data from "../../constants/AppData.js"
-const index = () => {
+const Home = () => {
   return (
     <div>
       {/* Development components - commented out */}
@@ -46,4 +48,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Home

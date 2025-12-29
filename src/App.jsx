@@ -2,7 +2,7 @@
 import React from 'react'
 
 // @import routes
-import Routes from './routes/Routing.jsx'
+import Routes from './routes/index.jsx'
 
 
 const App = () => {

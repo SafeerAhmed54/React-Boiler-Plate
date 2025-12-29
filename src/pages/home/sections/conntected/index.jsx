@@ -1,7 +1,7 @@
 import React from 'react'
-import Button from '../../../../components/button/Button.jsx'
+import Button from '../../../../components/button/index.jsx'
 
-const index = ({data}) => {
+const Connected = ({data}) => {
   return (
     <section className='get-connected my-20'>
       <div className='container'>
@@ -28,4 +28,4 @@ const index = ({data}) => {
   )
 }
 
-export default index
+export default Connected

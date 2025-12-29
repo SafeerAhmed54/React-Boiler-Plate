@@ -1,8 +1,8 @@
 import React from 'react'
-import Card from '../../../../components/card/Card.jsx'
-import SectionTitle from '../../../../components/sectionTitle/SectionTitle.jsx'
+import Card from '../../../../components/card/index.jsx'
+import SectionTitle from '../../../../components/sectionTitle/index.jsx'
 
-const index = ({data}) => {
+const Plan = ({data}) => {
   return (
     <section className='description-section py-20 my-20'>
       <div className='container'>
@@ -36,4 +36,4 @@ const index = ({data}) => {
   )
 }
 
-export default index
+export default Plan

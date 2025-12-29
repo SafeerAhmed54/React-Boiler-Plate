@@ -1,10 +1,10 @@
 import React from 'react'
 import { ArrowBigRight } from 'lucide-react'
-import Button from '../../../../components/button/Button.jsx'
-import SectionHeading from '../../../../components/sectionTitle/SectionTitle.jsx'
-import Card from '../../../../components/card/Card.jsx'
+import Button from '../../../../components/button/index.jsx'
+import SectionHeading from '../../../../components/sectionTitle/index.jsx'
+import Card from '../../../../components/card/index.jsx'
 
-const index = ({data}) => {
+const About = ({data}) => {
 
   Array.from({ length: 4 }).map((_, index) => {
     return (
@@ -61,4 +61,4 @@ const index = ({data}) => {
   )
 }
 
-export default index
+export default About
