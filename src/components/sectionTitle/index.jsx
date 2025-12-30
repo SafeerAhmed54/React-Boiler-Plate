@@ -1,7 +1,7 @@
 // @import dependencies
 import React from 'react'
 
-const sectionTitle = ({ heading, subHeading, headingDesc, subHeadingDesc , className="" , variant="", isCentered = false}) => {
+const SectionTitle = ({ heading, subHeading, headingDesc, subHeadingDesc , className="" , variant="", isCentered = false}) => {
 
     // Varaints for different title
     const varaints = {
@@ -19,4 +19,4 @@ const sectionTitle = ({ heading, subHeading, headingDesc, subHeadingDesc , class
     )
 }
 
-export default sectionTitle
+export default SectionTitle

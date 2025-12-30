@@ -1,3 +1,4 @@
+//@import Image from '../media/assets/img/hero-image.png'
 import Twins from '../media/assets/img/twins.svg'
 import Parody from '../media/assets/img/parody.svg'
 import DigitalGuide from '../media/assets/img/digital.svg'

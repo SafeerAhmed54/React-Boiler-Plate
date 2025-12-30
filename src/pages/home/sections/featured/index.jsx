@@ -1,6 +1,5 @@
 import React from 'react'
 import { ArrowBigRight, Section } from 'lucide-react'
-import FeatureCard from '../../../../components/FeatureCard.jsx'
 import Button from '../../../../components/button/index.jsx'
 import SectionTitle from '../../../../components/sectionTitle/index.jsx'
 import Card from '../../../../components/card/index.jsx'
