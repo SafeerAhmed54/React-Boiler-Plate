@@ -30,7 +30,7 @@ const About = ({data}) => {
             <Button onClick={(e) => {
               e.preventDefault();
             }}
-              btnText="TOLSTOY-1 API"
+              btnText="TOLSTOY-1"
               variant="primary"
               icon={<ArrowBigRight />}
             />
